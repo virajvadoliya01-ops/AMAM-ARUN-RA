@@ -8,3 +8,4 @@ __pycache__/
 scratch/
 .system_generated/
 *.tmp
+~$*
