@@ -4,8 +4,12 @@ __pycache__/
 *$py.class
 *.log
 
+# Documents & Office files (Do not deploy)
+*.docx
+*.doc
+~$*
+
 # Temp & Scratch
 scratch/
 .system_generated/
 *.tmp
-~$*
