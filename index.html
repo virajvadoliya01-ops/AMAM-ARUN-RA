@@ -22,13 +22,13 @@
 
   <!-- ==================== 1. TOP ANNOUNCEMENT BAR ==================== -->
   <aside class="announcement-bar" id="announcement">
-    <div style="display: flex; align-items: center; gap: 8px;">
+    <div class="announcement-col-left">
       <span class="pulse-dot"></span>
       <span class="badge-pulse">LIVE THIS FRIDAY @ 9:00 PM IST</span>
-      <span>Exclusive 90-Minute Zoom Masterclass with SEBI RA Amam Arun</span>
+      <span class="announcement-text">Exclusive 90-Minute Zoom Masterclass with SEBI RA Amam Arun</span>
     </div>
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <span style="font-size: 12px; opacity: 0.9;">Limited to first 100 Meta registrants</span>
+    <div class="announcement-col-right">
+      <span class="announcement-sub">Limited to first 100 Meta registrants</span>
       <button class="announcement-cta" onclick="openWebinarModal()">Claim Free Seat →</button>
     </div>
   </aside>
@@ -299,7 +299,7 @@
         <div class="strategy-controls">
           <div class="strategy-search-row">
             <input type="text" id="strategySearch" placeholder="🔍 Search by indicator, rule or name (e.g., EMA, Supertrend, RSI, VWAP, Breakout, Markov)..." class="strategy-search-input" />
-            <span id="renderedCount" style="font-size: 13.5px; font-weight: 700; color: var(--orange-700); white-space: nowrap;">
+            <span id="renderedCount" class="strategy-count-label">
               60 of 60 Strategies Showing
             </span>
           </div>
@@ -350,10 +350,10 @@
             
             <div>
               <span class="section-tag">Meta Ads Masterclass</span>
-              <h2 style="font-family: var(--font-display); font-size: 34px; font-weight: 800; color: var(--text-primary); margin: 12px 0;">
+              <h2 class="webinar-detail-title">
                 The Quantitative & Algo Edge: 90 Minutes Live with Amam Arun
               </h2>
-              <p style="font-size: 16px; color: var(--text-secondary); line-height: 1.6;">
+              <p class="webinar-detail-desc">
                 Every Friday at 9:00 PM IST, when the trading week has ended and emotional noise is cleared, Amam Arun hosts an interactive 90-minute live masterclass. Deconstruct what actually moved the market and build your own systematic trading plan for the week ahead.
               </p>
 
@@ -753,7 +753,7 @@
       <div class="container about-grid">
         <div class="about-photo-wrapper">
           <img src="assets/amam_arun.jpg" alt="Amam Arun SEBI RA" class="about-img" />
-          <div style="background: #FFFFFF; border-radius: 12px; padding: 14px 20px; box-shadow: var(--shadow-md); position: absolute; bottom: -20px; right: 20px; border: 1.5px solid var(--border-medium);">
+          <div class="about-photo-badge">
             <div style="font-weight: 800; font-size: 14px; color: var(--orange-700);">Amam Arun, SEBI RA</div>
             <div style="font-size: 11.5px; color: var(--text-muted);">Bangalore, Karnataka, India</div>
           </div>
@@ -768,7 +768,7 @@
           <p>
             Unlike social media influencers who monetize unregulated "tips" or earn commissions from broker affiliations, Amam's advisory operates with complete regulatory transparency under the SEBI (Research Analysts) Regulations, 2014. Every recommendation comes with an explicit investment thesis, a quantitative valuation framework, and documented risks that would invalidate it.
           </p>
-          <div style="display: flex; gap: 16px; margin-top: 24px;">
+          <div class="about-actions">
             <button class="btn-cta" onclick="openWebinarModal()">
               Meet Amam Live This Friday @ 9 PM →
             </button>
@@ -853,18 +853,18 @@
     </section>
 
     <!-- ==================== 13. BOTTOM CONVERSION CTA BANNER ==================== -->
-    <section style="background: linear-gradient(135deg, #FF6B00 0%, #EA580C 50%, #C2410C 100%); color: #FFFFFF; padding: 70px 0; text-align: center; position: relative;">
-      <div class="container" style="max-width: 800px;">
-        <span style="background: rgba(255, 255, 255, 0.2); font-weight: 800; font-size: 12px; padding: 4px 14px; border-radius: 999px; text-transform: uppercase;">
+    <section class="section-bottom-cta">
+      <div class="container bottom-cta-container">
+        <span class="bottom-cta-badge">
           Seats Capped at 100 Live Attendees
         </span>
-        <h2 style="font-family: var(--font-display); font-size: 36px; font-weight: 800; margin: 16px 0 12px; line-height: 1.2;">
+        <h2 class="bottom-cta-title">
           Take Control of Your Trading with Math & Statistics This Friday
         </h2>
-        <p style="font-size: 16px; opacity: 0.95; margin-bottom: 28px;">
+        <p class="bottom-cta-desc">
           Stop losing capital on unverified Telegram channels. Learn how a SEBI Registered Research Analyst models probability, deploys algorithms, and constructs resilient equity portfolios.
         </p>
-        <button class="btn-cta-large" onclick="openWebinarModal()" style="background: var(--green-cta-gradient); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);">
+        <button class="btn-cta-large" onclick="openWebinarModal()">
           Reserve Your Free Friday 9 PM Zoom Seat Now →
         </button>
       </div>
@@ -925,7 +925,7 @@
 
       <div class="footer-bottom">
         <div>© 2026 Amam Arun (SEBI RA INH000028422). All rights reserved.</div>
-        <div style="display: flex; gap: 16px;">
+        <div class="footer-legal-links">
           <span>Bangalore, Karnataka</span>
           <span>•</span>
           <span>Terms & Conditions</span>

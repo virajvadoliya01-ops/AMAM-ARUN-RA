@@ -137,6 +137,7 @@ button {
   box-shadow: var(--green-glow);
   position: relative;
   overflow: hidden;
+  contain: paint;
   transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   border: 1px solid rgba(255, 255, 255, 0.35);
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
@@ -155,7 +156,7 @@ button {
   content: '';
   position: absolute;
   top: -50%;
-  left: -60%;
+  left: 0;
   width: 40%;
   height: 200%;
   background: linear-gradient(
@@ -164,15 +165,15 @@ button {
     rgba(255, 255, 255, 0.5) 50%,
     rgba(255, 255, 255, 0) 100%
   );
-  transform: rotate(25deg);
+  transform: translateX(-150%) rotate(25deg);
   animation: ctaShine 3.2s infinite ease-in-out;
   pointer-events: none;
 }
 
 @keyframes ctaShine {
-  0% { left: -60%; }
-  35% { left: 140%; }
-  100% { left: 140%; }
+  0% { transform: translateX(-150%) rotate(25deg); }
+  35% { transform: translateX(350%) rotate(25deg); }
+  100% { transform: translateX(350%) rotate(25deg); }
 }
 
 .btn-cta:hover, .btn-cta-large:hover {
@@ -219,12 +220,26 @@ button {
   font-weight: 600;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 16px;
   position: relative;
   z-index: 100;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   letter-spacing: 0.2px;
+}
+
+.announcement-col-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.announcement-col-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .announcement-bar .badge-pulse {
@@ -874,6 +889,13 @@ button {
   align-items: center;
 }
 
+.strategy-count-label {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--orange-700);
+  white-space: nowrap;
+}
+
 .strategy-search-input {
   flex: 1;
   padding: 14px 20px;
@@ -1073,6 +1095,21 @@ button {
   display: grid;
   grid-template-columns: 1.1fr 0.9fr;
   gap: 48px;
+}
+
+.webinar-detail-title {
+  font-family: var(--font-display);
+  font-size: 34px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 12px 0;
+  line-height: 1.25;
+}
+
+.webinar-detail-desc {
+  font-size: 16px;
+  color: var(--text-secondary);
+  line-height: 1.6;
 }
 
 .webinar-pillars-list {
@@ -1436,6 +1473,17 @@ button {
   position: relative;
 }
 
+.about-photo-badge {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 14px 20px;
+  box-shadow: var(--shadow-md);
+  position: absolute;
+  bottom: -20px;
+  right: 20px;
+  border: 1.5px solid var(--border-medium);
+}
+
 .about-img {
   width: 100%;
   max-width: 440px;
@@ -1458,6 +1506,12 @@ button {
   color: var(--text-secondary);
   line-height: 1.7;
   margin-bottom: 16px;
+}
+
+.about-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
 }
 
 /* ===================================================================
@@ -1603,6 +1657,54 @@ button {
   font-size: 12.5px;
 }
 
+.footer-legal-links {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* ===================================================================
+   13. BOTTOM CONVERSION CTA BANNER
+   =================================================================== */
+.section-bottom-cta {
+  background: linear-gradient(135deg, #FF6B00 0%, #EA580C 50%, #C2410C 100%);
+  color: #FFFFFF;
+  padding: 70px 0;
+  text-align: center;
+  position: relative;
+}
+
+.bottom-cta-container {
+  max-width: 800px;
+}
+
+.bottom-cta-badge {
+  background: rgba(255, 255, 255, 0.2);
+  font-weight: 800;
+  font-size: 12px;
+  padding: 4px 14px;
+  border-radius: var(--radius-full);
+  text-transform: uppercase;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.bottom-cta-title {
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 14px;
+  line-height: 1.2;
+}
+
+.bottom-cta-desc {
+  font-size: 16px;
+  opacity: 0.95;
+  margin-bottom: 28px;
+  line-height: 1.6;
+}
+
 /* ===================================================================
    14. MODAL DIALOGS (Interactive Registration & Strategy Details)
    =================================================================== */
@@ -1706,65 +1808,516 @@ button {
 }
 
 /* ===================================================================
-   RESPONSIVE DESIGN (Tablets & Mobile)
+   RESPONSIVE DESIGN (Tablets & Mobile Phones: 320px - 1024px)
    =================================================================== */
+html, body {
+  overflow-x: hidden !important;
+  max-width: 100vw;
+  width: 100%;
+  position: relative;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 @media (max-width: 1024px) {
   .hero-grid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 36px;
   }
   .framework-cards-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
   .routine-timeline {
     grid-template-columns: 1fr 1fr;
+    gap: 16px;
   }
   .pricing-grid {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
   .price-card.featured {
     transform: none;
   }
   .webinar-detail-grid {
     grid-template-columns: 1fr;
+    gap: 32px;
   }
   .about-grid {
     grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .about-photo-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .floating-badge {
+    display: none !important;
   }
 }
 
 @media (max-width: 768px) {
-  .hero-title {
-    font-size: 32px;
+  .container {
+    padding: 0 16px;
   }
+
+  /* Top Announcement Bar */
   .announcement-bar {
-    font-size: 12px;
+    font-size: 11px;
+    padding: 8px 12px;
     flex-direction: column;
     gap: 6px;
     text-align: center;
+    line-height: 1.4;
+  }
+  .announcement-col-left,
+  .announcement-col-right {
+    justify-content: center;
+    text-align: center;
+    gap: 6px;
+    width: 100%;
+  }
+  .announcement-text {
+    display: inline-block;
+    width: 100%;
+  }
+
+  /* Navbar & Mobile Drawer */
+  .navbar {
+    height: auto;
+  }
+  .nav-container {
+    height: 64px;
+    padding: 0 14px;
+  }
+  .brand-wrap {
+    gap: 10px;
+  }
+  .brand-avatar {
+    width: 38px;
+    height: 38px;
+  }
+  .brand-name {
+    font-size: 15.5px;
+  }
+  .brand-sub {
+    display: none !important; /* Keep mobile header clean & uncluttered */
+  }
+  .nav-actions .btn-cta {
+    display: none !important; /* Hide small header button so brand + toggle never collide */
   }
   .nav-menu {
     display: none;
   }
+  .nav-menu.mobile-open {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: #FFFFFF;
+    padding: 16px 14px;
+    border-radius: 0 0 20px 20px;
+    border-bottom: 2px solid var(--border-medium);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.16);
+    z-index: 999;
+    gap: 6px;
+  }
+  .nav-menu.mobile-open .nav-link {
+    width: 100%;
+    justify-content: center;
+    padding: 10px;
+    font-size: 14px;
+  }
   .mobile-toggle {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: #FFF7ED;
+    border: 1.5px solid var(--border-medium);
+    font-size: 20px;
+    color: var(--orange-700);
+    cursor: pointer;
   }
-  .metrics-grid {
-    grid-template-columns: repeat(2, 1fr);
+
+  /* Hero Section */
+  .hero-section {
+    padding: 24px 0 38px;
   }
-  .routine-timeline {
-    grid-template-columns: 1fr;
+  .hero-content {
+    text-align: center;
+    align-items: center;
   }
-  .qual-grid {
-    grid-template-columns: 1fr;
+  .hero-badge-wrap {
+    font-size: 11px;
+    padding: 5px 12px;
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.35;
+    margin: 0 auto;
   }
-  .footer-top-grid {
-    grid-template-columns: 1fr;
+  .hero-title {
+    font-size: 26px;
+    line-height: 1.22;
+    letter-spacing: -0.3px;
+    text-align: center;
+    word-break: break-word;
+  }
+  .hero-description {
+    font-size: 14px;
+    line-height: 1.55;
+    text-align: center;
+  }
+  .webinar-card {
+    padding: 18px 14px;
+    border-radius: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  .webinar-card-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .webinar-tag {
+    font-size: 11.5px;
+  }
+  .countdown-box {
+    gap: 6px;
+    margin-bottom: 14px;
+    width: 100%;
+  }
+  .countdown-unit {
+    padding: 8px 2px;
+    min-width: 0;
+  }
+  .countdown-number {
+    font-size: 18px;
+  }
+  .countdown-label {
+    font-size: 8.5px;
   }
   .webinar-quick-register {
     flex-direction: column;
+    gap: 8px;
+    width: 100%;
+  }
+  .input-whatsapp {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 13.5px;
+    text-align: center;
+  }
+  .webinar-guarantee {
+    font-size: 11px;
+    line-height: 1.4;
+    text-align: center;
+    justify-content: center;
+  }
+  .hero-visual {
+    width: 100%;
+  }
+  .hero-image-frame {
+    max-width: 270px;
+    border-radius: 18px;
+    margin: 0 auto;
+  }
+  .hero-img {
+    height: 330px;
   }
   .floating-badge {
-    display: none;
+    display: none !important;
+  }
+
+  /* Metrics Strip */
+  .trust-metrics-strip {
+    padding: 16px 0;
+    margin-top: 14px;
+  }
+  .metrics-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 12px;
+  }
+  .metric-value {
+    font-size: 22px;
+  }
+  .metric-label {
+    font-size: 11px;
+  }
+
+  /* Section Spacing & Headers */
+  .section-framework,
+  .section-strategies,
+  .section-webinar-detail,
+  .section-methodology,
+  .section-routine,
+  .section-qualification,
+  .section-pricing,
+  .section-about,
+  .section-faq {
+    padding: 40px 0;
+  }
+  .section-header {
+    margin-bottom: 28px;
+  }
+  .section-title {
+    font-size: 23px;
+    line-height: 1.25;
+  }
+  .section-subtitle {
+    font-size: 13.5px;
+  }
+
+  /* 60 Strategies Section */
+  .strategy-controls {
+    padding: 16px 12px;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .strategy-search-row {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    width: 100%;
+  }
+  .strategy-search-input {
+    width: 100%;
+    padding: 11px 14px;
+    font-size: 13px;
+  }
+  .strategy-count-label {
+    white-space: normal;
+    text-align: center;
+    font-size: 12px;
+  }
+  .strategy-filter-pills {
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+  }
+  .filter-pill {
+    padding: 6px 11px;
+    font-size: 11px;
+  }
+  .strategies-grid {
+    grid-template-columns: 100% !important;
+    gap: 14px;
+    width: 100%;
+  }
+  .strategy-card {
+    padding: 16px 14px;
+    min-width: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .strat-title {
+    font-size: 16px;
+  }
+  .strat-desc {
+    font-size: 12.5px;
+  }
+  .strat-rule-box {
+    font-size: 11.5px;
+    padding: 8px 10px;
+    word-break: break-word;
+  }
+
+  /* Friday 9 PM Webinar Detail Section */
+  .webinar-detail-wrapper {
+    padding: 22px 14px;
+    border-radius: 18px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .webinar-detail-title {
+    font-size: 22px;
+    line-height: 1.25;
+  }
+  .webinar-detail-desc {
+    font-size: 13.5px;
+  }
+  .pillar-item {
+    padding: 12px;
+    gap: 10px;
+    min-width: 0;
+  }
+  .pillar-icon-box {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+  }
+  .pillar-content h4 {
+    font-size: 14px;
+  }
+  .pillar-content p {
+    font-size: 12.5px;
+  }
+  .bonuses-stack {
+    padding: 16px 12px;
+  }
+  .bonuses-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  /* Methodology */
+  .method-step-row {
+    grid-template-columns: 32px 1fr;
+    gap: 10px;
+    padding: 16px 0;
+  }
+  .method-num {
+    font-size: 16px;
+  }
+  .method-body h3 {
+    font-size: 16px;
+  }
+  .method-body p {
+    font-size: 13px;
+  }
+
+  /* Routine Schedule */
+  .routine-timeline {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .routine-card {
+    padding: 18px 14px;
+  }
+
+  /* Qualification */
+  .qual-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .qual-card {
+    padding: 20px 14px;
+  }
+  .qual-header h3 {
+    font-size: 17px;
+  }
+  .qual-item {
+    font-size: 13px;
+  }
+
+  /* Pricing */
+  .price-card {
+    padding: 22px 14px;
+  }
+  .price-amount {
+    font-size: 30px;
+  }
+
+  /* About Amam Arun */
+  .about-photo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+  .about-img {
+    max-width: 270px;
+    margin: 0 auto;
+  }
+  .about-photo-badge {
+    position: static !important;
+    bottom: auto !important;
+    right: auto !important;
+    left: auto !important;
+    transform: none !important;
+    margin: 14px auto 0 !important;
+    text-align: center;
+    width: fit-content;
+    max-width: 270px;
+    box-sizing: border-box;
+  }
+  .about-content h2 {
+    font-size: 22px;
+    line-height: 1.25;
+  }
+  .about-content p {
+    font-size: 13.5px;
+  }
+  .about-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Bottom CTA Banner */
+  .section-bottom-cta {
+    padding: 44px 0;
+  }
+  .bottom-cta-title {
+    font-size: 24px;
+    line-height: 1.22;
+  }
+  .bottom-cta-desc {
+    font-size: 13.5px;
+  }
+
+  /* FAQ */
+  .faq-question {
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+  .faq-answer {
+    padding: 0 16px;
+    font-size: 13px;
+  }
+  .faq-item.open .faq-answer {
+    padding-bottom: 16px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 40px 0 20px;
+  }
+  .footer-top-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+  .footer-compliance-box {
+    padding: 16px 12px;
+    font-size: 11px;
+    line-height: 1.6;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    font-size: 11.5px;
+  }
+  .footer-legal-links {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  /* Modals */
+  .modal-card {
+    padding: 20px 14px;
+    border-radius: 16px;
+    width: 95%;
+    max-height: 92vh;
+  }
+
+  /* Buttons */
+  .btn-cta, .btn-cta-large {
+    padding: 13px 18px;
+    font-size: 13.5px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
   }
 }
+

@@ -389,20 +389,30 @@ function initMobileNav() {
   const toggle = document.querySelector('.mobile-toggle');
   const menu = document.querySelector('.nav-menu');
   if (toggle && menu) {
-    toggle.addEventListener('click', () => {
-      const isVisible = menu.style.display === 'flex';
-      menu.style.display = isVisible ? 'none' : 'flex';
-      if (!isVisible) {
-        menu.style.flexDirection = 'column';
-        menu.style.position = 'absolute';
-        menu.style.top = '80px';
-        menu.style.left = '0';
-        menu.style.right = '0';
-        menu.style.background = '#FFFFFF';
-        menu.style.padding = '24px';
-        menu.style.borderBottom = '2px solid var(--border-medium)';
-        menu.style.boxShadow = '0 10px 25px rgba(0,0,0,0.1)';
+    toggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = menu.classList.toggle('mobile-open');
+      toggle.innerHTML = isOpen ? '✕' : '☰';
+      toggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Close mobile drawer when any link is tapped
+    menu.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.remove('mobile-open');
+        toggle.innerHTML = '☰';
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Close when tapping outside the menu
+    document.addEventListener('click', (e) => {
+      if (menu.classList.contains('mobile-open') && !menu.contains(e.target) && !toggle.contains(e.target)) {
+        menu.classList.remove('mobile-open');
+        toggle.innerHTML = '☰';
+        toggle.setAttribute('aria-expanded', 'false');
       }
     });
   }
 }
+
