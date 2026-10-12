@@ -1,0 +1,10 @@
+# Python / Environment
+__pycache__/
+*.py[cod]
+*$py.class
+*.log
+
+# Temp & Scratch
+scratch/
+.system_generated/
+*.tmp

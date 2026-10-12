@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Best Practices -->
+  <title>Amam Arun | SEBI Registered Research Analyst (INH000028422) — Friday 9 PM Masterclass & Quantitative Trading Ecosystem</title>
+  <meta name="description" content="Official website of Amam Arun, SEBI Registered Research Analyst (INH000028422). Join the weekly Friday 9:00 PM live masterclass to build your own algorithmic trading strategies with Markov chains, statistics & AI, plus access curated 10-15 stock model portfolios." />
+  <meta name="keywords" content="Amam Arun, SEBI Registered Research Analyst, INH000028422, Algo Trading, Markov Chains, Quantitative Trading, Stock Market Webinar, Model Portfolio, Golden Bird RA" />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Amam Arun (SEBI RA) — Friday 9 PM Live Masterclass & 60 Algo Strategies" />
+  <meta property="og:description" content="Stop copying strangers on Telegram. Build your own systematic trading and equity portfolio using math, probability and AI." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/amam_arun.jpg" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ==================== 1. TOP ANNOUNCEMENT BAR ==================== -->
+  <aside class="announcement-bar" id="announcement">
+    <div style="display: flex; align-items: center; gap: 8px;">
+      <span class="pulse-dot"></span>
+      <span class="badge-pulse">LIVE THIS FRIDAY @ 9:00 PM IST</span>
+      <span>Exclusive 90-Minute Zoom Masterclass with SEBI RA Amam Arun</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <span style="font-size: 12px; opacity: 0.9;">Limited to first 100 Meta registrants</span>
+      <button class="announcement-cta" onclick="openWebinarModal()">Claim Free Seat →</button>
+    </div>
+  </aside>
+
+  <!-- ==================== 2. GLOBAL NAVBAR ==================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#" class="brand-wrap">
+        <img src="assets/amam_arun.jpg" alt="Amam Arun - SEBI RA" class="brand-avatar" fetchpriority="high" />
+        <div class="brand-info">
+          <span class="brand-name">
+            Amam Arun
+            <span class="verified-icon" title="SEBI Registered Intermediary">☑</span>
+          </span>
+          <span class="brand-sub">SEBI RA · INH000028422 · Bangalore</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#framework" class="nav-link">3 Stages</a></li>
+          <li><a href="#webinar" class="nav-link">Friday 9 PM</a></li>
+          <li><a href="#strategies" class="nav-link">60 Algos</a></li>
+          <li><a href="#methodology" class="nav-link">Methodology</a></li>
+          <li><a href="#routine" class="nav-link">Daily Routine</a></li>
+          <li><a href="#pricing" class="nav-link">Membership</a></li>
+          <li><a href="#about" class="nav-link">About Amam</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-cta" onclick="openWebinarModal()" id="navCtaBtn">
+          Register for Friday 9 PM
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+        <button class="mobile-toggle" aria-label="Toggle navigation">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== 3. HERO SECTION ==================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-grid">
+        
+        <div class="hero-content">
+          <div class="hero-badge-wrap">
+            <span>🛡️</span>
+            <span>SEBI REGISTERED RESEARCH ANALYST · INH000028422</span>
+          </div>
+
+          <h1 class="hero-title">
+            Stop Copying Strangers on Telegram. Build Your Own <span class="gradient-text">Systematic Edge</span> with Math, Probability & AI.
+          </h1>
+
+          <p class="hero-description">
+            A disciplined, conflict-free ecosystem designed by Amam Arun (SEBI RA). Combining 12 years of fundamental research, Markov-chain algorithmic strategy design, and an active 10–15 stock Model Portfolio. No speculative tips. No emotional gambles. Pure mathematical execution.
+          </p>
+
+          <!-- Core Friday Webinar Conversion Card -->
+          <div class="webinar-card">
+            <div class="webinar-card-header">
+              <span class="webinar-tag">
+                <span class="pulse-dot"></span>
+                Upcoming Masterclass: Friday @ 9:00 PM IST
+              </span>
+              <span class="seats-left">Only 100 Seats Open</span>
+            </div>
+
+            <!-- Live Countdown Timer -->
+            <div class="countdown-box" id="heroCountdown">
+              <div class="countdown-unit">
+                <div class="countdown-number" id="days">00</div>
+                <div class="countdown-label">Days</div>
+              </div>
+              <div class="countdown-unit">
+                <div class="countdown-number" id="hours">00</div>
+                <div class="countdown-label">Hours</div>
+              </div>
+              <div class="countdown-unit">
+                <div class="countdown-number" id="minutes">00</div>
+                <div class="countdown-label">Minutes</div>
+              </div>
+              <div class="countdown-unit">
+                <div class="countdown-number" id="seconds">00</div>
+                <div class="countdown-label">Seconds</div>
+              </div>
+            </div>
+
+            <div class="webinar-quick-register">
+              <input type="tel" id="heroWhatsapp" placeholder="Enter WhatsApp Number to Reserve Seat" class="input-whatsapp" />
+              <button class="btn-cta" id="heroRegBtn">
+                Get Friday Zoom Pass (Free) →
+              </button>
+            </div>
+
+            <div class="webinar-guarantee">
+              <span>🔒 Direct Zoom Live Link · 90-Min Masterclass + Live Q&A · 100% Free for Meta Registrants</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Photo & Visual Showcase -->
+        <div class="hero-visual">
+          <div class="hero-image-frame">
+            <img src="assets/amam_arun.jpg" alt="Amam Arun SEBI Registered Research Analyst" class="hero-img" fetchpriority="high" />
+            
+            <div class="hero-caption">
+              <div class="hero-caption-name">Amam Arun</div>
+              <div class="hero-caption-role">SEBI Registered Research Analyst · INH000028422</div>
+            </div>
+          </div>
+
+          <!-- Floating Badges -->
+          <div class="floating-badge badge-top-left">
+            <div class="floating-icon">📊</div>
+            <div>
+              <div class="floating-title">12+ Years Research</div>
+              <div class="floating-sub">Cycle-Tested Equity Edge</div>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-bottom-right">
+            <div class="floating-icon">⚙️</div>
+            <div>
+              <div class="floating-title">60 Inbuilt Algos</div>
+              <div class="floating-sub">Paper & Live Broker APIs</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Trust Metrics Strip -->
+      <div class="trust-metrics-strip">
+        <div class="container metrics-grid">
+          <div>
+            <div class="metric-value">12+ Years</div>
+            <div class="metric-label">Public Equity Market Experience</div>
+          </div>
+          <div>
+            <div class="metric-value">60 Strategies</div>
+            <div class="metric-label">Pre-Built Algorithmic Library</div>
+          </div>
+          <div>
+            <div class="metric-value">10–15 Stocks</div>
+            <div class="metric-label">High-Conviction Model Portfolio</div>
+          </div>
+          <div>
+            <div class="metric-value">100% Conflict-Free</div>
+            <div class="metric-label">Regulated Under SEBI RA 2014</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. THE 3-STAGE MASTER FRAMEWORK ==================== -->
+    <section class="section-framework" id="framework">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Systematic Blueprint</span>
+          <h2 class="section-title">The Three Stages of Systematic Market Mastery</h2>
+          <p class="section-subtitle">
+            Modeled on institutional rigor: first you understand every statistical rule, then you apply independent research, and finally you automate execution on your own broker.
+          </p>
+        </div>
+
+        <div class="framework-cards-grid">
+          <!-- Stage 1 -->
+          <div class="stage-card">
+            <div class="stage-header">
+              <span class="stage-number">STAGE 01</span>
+              <div class="stage-icon">🧠</div>
+            </div>
+            <h3 class="stage-title">LEARN</h3>
+            <div class="stage-tagline">Friday Masterclasses & Live 1-Month Cohort</div>
+            <p class="stage-desc">
+              Overcome the retail trap of relying on Telegram tips. Learn descriptive statistics, probability theory, outlier detection, and Markov Chain transition matrices directly from a SEBI RA.
+            </p>
+            <ul class="stage-bullet-list">
+              <li class="stage-bullet-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Weekly Friday 9:00 PM live interactive market debriefs
+              </li>
+              <li class="stage-bullet-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Markov Chains & probabilistic strategy modeling
+              </li>
+              <li class="stage-bullet-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Prompting modern AI tools to code algorithmic logic
+              </li>
+            </ul>
+            <button class="btn-cta" onclick="openWebinarModal()">Experience Stage 01 Live →</button>
+          </div>
+
+          <!-- Stage 2 -->
+          <div class="stage-card">
+            <div class="stage-header">
+              <span class="stage-number">STAGE 02</span>
+              <div class="stage-icon">📈</div>
+            </div>
+            <h3 class="stage-title">APPLY</h3>
+            <div class="stage-tagline">Golden Bird SEBI-Registered Research</div>
+            <p class="stage-desc">
+              Access the Golden Bird Model Portfolio: an active basket of 10–15 curated Indian companies with published allocation weights, documented fundamental thesis, and disciplined quarterly rebalancing.
+            </p>
+            <ul class="stage-bullet-list">
+              <li class="stage-bullet-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                10–15 stock curated model portfolio for wealth compounding
+              </li>
+              <li class="stage-bullet-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Quarterly earnings reviews & documented rebalancing
+              </li>
+              <li class="stage-bullet-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Daily 8:45 AM pre-market intelligence brief on WhatsApp
+              </li>
+            </ul>
+            <button class="btn-secondary" onclick="openWebinarModal()">View Portfolio Approach →</button>
+          </div>
+
+          <!-- Stage 3 -->
+          <div class="stage-card">
+            <div class="stage-header">
+              <span class="stage-number">STAGE 03</span>
+              <div class="stage-icon">🤖</div>
+            </div>
+            <h3 class="stage-title">AUTOMATE</h3>
+            <div class="stage-tagline">Systematic Algo Execution Without Coding</div>
+            <p class="stage-desc">
+              Connect to our library of 60 quantitative strategies. Backtest rigorously, test in paper trading, and deploy live execution on 100+ supported brokers of your choice with zero black-box mystery.
+            </p>
+            <ul class="stage-bullet-list">
+              <li class="stage-bullet-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                60 pre-built quantitative strategies across 5 categories
+              </li>
+              <li class="stage-bullet-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Paper-trade first, deploy live on your own broker API
+              </li>
+              <li class="stage-bullet-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Disciplined emotionless execution with hard stop-losses
+              </li>
+            </ul>
+            <a href="#strategies" class="btn-secondary">Explore 60 Algos Below ↓</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. SECTION: THE 60 INBUILT STRATEGIES LIBRARY ==================== -->
+    <section class="section-strategies" id="strategies">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Proprietary Strategy Engine</span>
+          <h2 class="section-title">The 60 Inbuilt Quantitative & Algorithmic Strategies</h2>
+          <p class="section-subtitle">
+            Education first, automation second. Every single strategy is taught with mathematical rules, statistical edge, and zero black-box mystery. Inspect the logic, paper-trade, and deploy.
+          </p>
+        </div>
+
+        <!-- Strategy Controls: Real-time Search & Category Filters -->
+        <div class="strategy-controls">
+          <div class="strategy-search-row">
+            <input type="text" id="strategySearch" placeholder="🔍 Search by indicator, rule or name (e.g., EMA, Supertrend, RSI, VWAP, Breakout, Markov)..." class="strategy-search-input" />
+            <span id="renderedCount" style="font-size: 13.5px; font-weight: 700; color: var(--orange-700); white-space: nowrap;">
+              60 of 60 Strategies Showing
+            </span>
+          </div>
+
+          <div class="strategy-filter-pills">
+            <button class="filter-pill active" data-filter="All">
+              All <span class="strategy-counter-badge">60</span>
+            </button>
+            <button class="filter-pill" data-filter="Trend">
+              Trend <span class="strategy-counter-badge">19</span>
+            </button>
+            <button class="filter-pill" data-filter="Momentum">
+              Momentum <span class="strategy-counter-badge">8</span>
+            </button>
+            <button class="filter-pill" data-filter="Mean Reversion">
+              Mean Reversion <span class="strategy-counter-badge">6</span>
+            </button>
+            <button class="filter-pill" data-filter="Breakout">
+              Breakout <span class="strategy-counter-badge">12</span>
+            </button>
+            <button class="filter-pill" data-filter="Price Action">
+              Price Action <span class="strategy-counter-badge">15</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Grid of 60 Strategy Cards -->
+        <div class="strategies-grid" id="strategiesGrid">
+          <!-- Rendered dynamically by app.js from STRATEGIES array -->
+        </div>
+
+        <div style="text-align: center; margin-top: 48px;">
+          <p style="font-size: 15px; color: var(--text-secondary); margin-bottom: 16px;">
+            Want to see how to backtest and automate these 60 strategies using AI tools?
+          </p>
+          <button class="btn-cta-large" onclick="openWebinarModal()">
+            Attend Live Demo This Friday @ 9:00 PM IST →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. FRIDAY 9:00 PM LIVE WEBINAR DETAIL ==================== -->
+    <section class="section-webinar-detail" id="webinar">
+      <div class="container">
+        <div class="webinar-detail-wrapper">
+          <div class="webinar-detail-grid">
+            
+            <div>
+              <span class="section-tag">Meta Ads Masterclass</span>
+              <h2 style="font-family: var(--font-display); font-size: 34px; font-weight: 800; color: var(--text-primary); margin: 12px 0;">
+                The Quantitative & Algo Edge: 90 Minutes Live with Amam Arun
+              </h2>
+              <p style="font-size: 16px; color: var(--text-secondary); line-height: 1.6;">
+                Every Friday at 9:00 PM IST, when the trading week has ended and emotional noise is cleared, Amam Arun hosts an interactive 90-minute live masterclass. Deconstruct what actually moved the market and build your own systematic trading plan for the week ahead.
+              </p>
+
+              <div class="webinar-pillars-list">
+                <div class="pillar-item">
+                  <div class="pillar-icon-box">01</div>
+                  <div class="pillar-content">
+                    <h4>The Retail Trap Exposed</h4>
+                    <p>Why 95% lose money on chart patterns, support/resistance, and Telegram tip channels—and how institutions exploit these behaviors.</p>
+                  </div>
+                </div>
+
+                <div class="pillar-item">
+                  <div class="pillar-icon-box">02</div>
+                  <div class="pillar-content">
+                    <h4>Probability & Outlier Detection</h4>
+                    <p>How to use standard deviation, volume shockers, and price volatility to identify high-probability setups before retail traders notice.</p>
+                  </div>
+                </div>
+
+                <div class="pillar-item">
+                  <div class="pillar-icon-box">03</div>
+                  <div class="pillar-content">
+                    <h4>The Markov Chain Edge</h4>
+                    <p>Demystifying Markov state transitions in plain English: modeling trending, choppy, and reversal regimes to generate rule-based triggers.</p>
+                  </div>
+                </div>
+
+                <div class="pillar-item">
+                  <div class="pillar-icon-box">04</div>
+                  <div class="pillar-content">
+                    <h4>Building Algos with AI (Zero Coding)</h4>
+                    <p>A live demonstration of translating quantitative rules into backtestable strategies using modern AI prompts.</p>
+                  </div>
+                </div>
+
+                <div class="pillar-item">
+                  <div class="pillar-icon-box">05</div>
+                  <div class="pillar-content">
+                    <h4>10–15 Stock Model Portfolio Framework</h4>
+                    <p>How busy working professionals can construct a quarterly-reviewed wealth portfolio without staring at daytime screens.</p>
+                  </div>
+                </div>
+
+                <div class="pillar-item">
+                  <div class="pillar-icon-box">06</div>
+                  <div class="pillar-content">
+                    <h4>Live Interactive Q&A</h4>
+                    <p>Unscripted direct access to ask your burning market and portfolio questions to SEBI Registered RA Amam Arun.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Registration Card & Free Attendee Bonuses -->
+            <div>
+              <div class="bonuses-stack">
+                <div class="bonuses-header">
+                  <span style="font-weight: 800; font-size: 15px; color: var(--text-primary);">Exclusive Live Attendee Bonuses</span>
+                  <span class="bonus-pill">Worth ₹8,497 Free</span>
+                </div>
+
+                <div class="bonus-item">
+                  <span class="bonus-check">✓</span>
+                  <div>
+                    <h5>Bonus 1: Markov Chain Strategy Design Blueprint</h5>
+                    <span>Value: ₹2,999 (Free for Friday attendees)</span>
+                    <p style="font-size: 12.5px; color: var(--text-muted); margin-top: 2px;">Step-by-step PDF manual on state transition modeling.</p>
+                  </div>
+                </div>
+
+                <div class="bonus-item">
+                  <span class="bonus-check">✓</span>
+                  <div>
+                    <h5>Bonus 2: 5-Step Fundamental Stock Screener Checklist</h5>
+                    <span>Value: ₹3,499 (Free for Friday attendees)</span>
+                    <p style="font-size: 12.5px; color: var(--text-muted); margin-top: 2px;">Filter 4,000 listed stocks down to 15 high-conviction companies.</p>
+                  </div>
+                </div>
+
+                <div class="bonus-item">
+                  <span class="bonus-check">✓</span>
+                  <div>
+                    <h5>Bonus 3: Systematic Risk & Drawdown Calculator</h5>
+                    <span>Value: ₹1,999 (Free for Friday attendees)</span>
+                    <p style="font-size: 12.5px; color: var(--text-muted); margin-top: 2px;">Excel model for position sizing and capital preservation.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Quick Registration Widget inside Box -->
+              <div style="background: #FFFFFF; border: 1.5px solid var(--border-medium); border-radius: var(--radius-lg); padding: 24px; margin-top: 24px; box-shadow: var(--shadow-sm);">
+                <h4 style="font-size: 18px; font-weight: 800; color: var(--text-primary); margin-bottom: 6px;">
+                  Reserve Your Complimentary Live Seat
+                </h4>
+                <p style="font-size: 13px; color: var(--text-muted); margin-bottom: 16px;">
+                  Zoom room capped at 100 participants. Enter your WhatsApp number below to receive the direct invite link and calendar pass.
+                </p>
+
+                <button class="btn-cta-large" style="width: 100%;" onclick="openWebinarModal()">
+                  Claim Free Friday 9 PM Pass Now →
+                </button>
+
+                <div style="display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 12px; font-size: 12px; color: var(--text-muted);">
+                  <span>⏱️ 90 Mins Live</span>
+                  <span>•</span>
+                  <span>📍 Zoom Private Room</span>
+                  <span>•</span>
+                  <span>🔒 100% Free Live Access</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. THE 5-STEP METHODOLOGY ==================== -->
+    <section class="section-methodology" id="methodology">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Documented Rigor</span>
+          <h2 class="section-title">The 5-Step Fundamental Research Process</h2>
+          <p class="section-subtitle">
+            Every recommendation passes through a documented five-step audit. Nothing is shortcut. No leveraged punts, no quick tips.
+          </p>
+        </div>
+
+        <div style="max-width: 900px; margin: 0 auto;">
+          <div class="method-step-row">
+            <div class="method-num">01</div>
+            <div class="method-body">
+              <h3>Quantitative Screening</h3>
+              <p>Quantitative filters across ~4,000 listed Indian companies assessing balance sheet health, return on equity (ROE > 18%), cash conversion cycles, and debt-to-equity ratios.</p>
+            </div>
+          </div>
+
+          <div class="method-step-row">
+            <div class="method-num">02</div>
+            <div class="method-body">
+              <h3>Deep Forensic Analysis</h3>
+              <p>Auditing 10-year annual reports, investor conference calls, promoter background checks, channel checks, and forensic accounting to eliminate corporate governance red flags.</p>
+            </div>
+          </div>
+
+          <div class="method-step-row">
+            <div class="method-num">03</div>
+            <div class="method-body">
+              <h3>Valuation Framework</h3>
+              <p>Discounted Cash Flow (DCF), peer multiples, and reverse-engineered expectations to calculate margin-of-safety price ranges rather than single speculative targets.</p>
+            </div>
+          </div>
+
+          <div class="method-step-row">
+            <div class="method-num">04</div>
+            <div class="method-body">
+              <h3>Explicit Risk Disclosures</h3>
+              <p>Every research note carries an explicit, documented list of operational, regulatory, and macro risks that would invalidate the thesis and trigger a disciplined exit.</p>
+            </div>
+          </div>
+
+          <div class="method-step-row">
+            <div class="method-num">05</div>
+            <div class="method-body">
+              <h3>Ongoing Coverage & Quarterly Review</h3>
+              <p>Post-earnings reviews on all covered companies every quarter—recommendations are upgraded, held, or exited with published rationale.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. A MEMBER'S DAY (Routine Schedule) ==================== -->
+    <section class="section-routine" id="routine">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Disciplined Cadence</span>
+          <h2 class="section-title">A Member’s Day Inside the Ecosystem</h2>
+          <p class="section-subtitle">
+            See exactly how members interact with our research and automation tools every day without disrupting their professional careers.
+          </p>
+        </div>
+
+        <div class="routine-timeline">
+          <div class="routine-card">
+            <span class="routine-time">08:45 AM IST</span>
+            <h4>Pre-Market Intelligence</h4>
+            <p>Read the Daily Intelligence report on WhatsApp before the opening bell: Key Nifty levels, global cues, FII/DII flows, and watchpoints for the trading day.</p>
+          </div>
+
+          <div class="routine-card">
+            <span class="routine-time">09:15 AM – 03:30 PM</span>
+            <h4>Systematic Market Hours</h4>
+            <p>Zero screen addiction. If running your algo strategies, rules execute automatically via broker API. If following the Model Portfolio, no intraday action is needed.</p>
+          </div>
+
+          <div class="routine-card">
+            <span class="routine-time">Post-Market Hours</span>
+            <h4>Research & Earnings Briefs</h4>
+            <p>Receive deep-dive sectoral notes or post-earnings coverage updates on Model Portfolio companies with actionable guidance.</p>
+          </div>
+
+          <div class="routine-card" style="border: 2px solid var(--orange-500); background: #FFFDF9;">
+            <span class="routine-time" style="background: var(--orange-500); color: #FFF;">Friday @ 9:00 PM</span>
+            <h4>Weekly Live Masterclass</h4>
+            <p>Join Amam Arun live on Zoom for 90 minutes. Deconstruct the week's market behavior, inspect algo setups, and prepare for the week ahead.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 9. QUALIFICATION FILTER ==================== -->
+    <section class="section-qualification" id="qualification">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Strict Transparency</span>
+          <h2 class="section-title">Is This Ecosystem Right For You?</h2>
+          <p class="section-subtitle">
+            We operate with strict regulatory standards and mutual respect. Review our criteria before enrolling.
+          </p>
+        </div>
+
+        <div class="qual-grid">
+          <div class="qual-card qual-for">
+            <div class="qual-header">
+              <span style="font-size: 24px;">✅</span>
+              <h3>WHO THIS IS BUILT FOR</h3>
+            </div>
+            <ul class="qual-list">
+              <li class="qual-item">
+                <span style="color: #16A34A; font-weight: 800;">•</span>
+                <span><strong>Working professionals & executives</strong> who want serious wealth compounding without staring at trading terminals all day.</span>
+              </li>
+              <li class="qual-item">
+                <span style="color: #16A34A; font-weight: 800;">•</span>
+                <span><strong>Disciplined retail traders</strong> looking to replace emotion and social media tips with mathematical, rule-based algorithmic systems.</span>
+              </li>
+              <li class="qual-item">
+                <span style="color: #16A34A; font-weight: 800;">•</span>
+                <span><strong>Engineers, quants & tech enthusiasts</strong> who appreciate statistics, probability theory, and Markov Chains.</span>
+              </li>
+              <li class="qual-item">
+                <span style="color: #16A34A; font-weight: 800;">•</span>
+                <span><strong>Investors demanding full regulatory compliance</strong> under SEBI (Research Analysts) Regulations, 2014.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="qual-card qual-not-for">
+            <div class="qual-header">
+              <span style="font-size: 24px;">❌</span>
+              <h3>WHO THIS IS STRICTLY NOT FOR</h3>
+            </div>
+            <ul class="qual-list">
+              <li class="qual-item">
+                <span style="color: #DC2626; font-weight: 800;">•</span>
+                <span><strong>Gamblers</strong> searching for "hero-or-zero" 0DTE intraday options calls or jackpot tips.</span>
+              </li>
+              <li class="qual-item">
+                <span style="color: #DC2626; font-weight: 800;">•</span>
+                <span><strong>Get-rich-quick seekers</strong> expecting guaranteed returns or overnight wealth miracles.</span>
+              </li>
+              <li class="qual-item">
+                <span style="color: #DC2626; font-weight: 800;">•</span>
+                <span><strong>Unregulated followers</strong> who refuse to read research notes or abide by stop-loss risk rules.</span>
+              </li>
+              <li class="qual-item">
+                <span style="color: #DC2626; font-weight: 800;">•</span>
+                <span><strong>Discretionary PMS seekers:</strong> We provide general research recommendations; we do not manage personal accounts.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 10. PRICING & MEMBERSHIP TIERS ==================== -->
+    <section class="section-pricing" id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Membership & Tiers</span>
+          <h2 class="section-title">Transparent Investment Options</h2>
+          <p class="section-subtitle">
+            Start with our complimentary Friday masterclass, master algorithmic trading in our live cohort, or unlock complete ecosystem access.
+          </p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Tier 1 -->
+          <div class="price-card">
+            <h3 class="price-card-title">Friday Live Masterclass</h3>
+            <div class="price-card-tag">Top-of-Funnel Live Access</div>
+            <div class="price-amount">FREE</div>
+            <div class="price-cadence">Standard value: ₹1,999 (Waived via Meta Ads)</div>
+            
+            <ul class="price-features-list">
+              <li class="price-feature-item">
+                <span style="color: #16A34A;">✔</span>
+                <span>90-Minute live Zoom session on Friday @ 9 PM</span>
+              </li>
+              <li class="price-feature-item">
+                <span style="color: #16A34A;">✔</span>
+                <span>Markov Chain strategy design walkthrough</span>
+              </li>
+              <li class="price-feature-item">
+                <span style="color: #16A34A;">✔</span>
+                <span>All 3 free attendee bonuses worth ₹8,497</span>
+              </li>
+              <li class="price-feature-item">
+                <span style="color: #16A34A;">✔</span>
+                <span>Interactive live Q&A with Amam Arun</span>
+              </li>
+            </ul>
+
+            <button class="btn-cta" onclick="openWebinarModal()">
+              Register Free For Friday 9 PM →
+            </button>
+          </div>
+
+          <!-- Tier 2: Featured Bundle -->
+          <div class="price-card featured">
+            <span class="popular-badge">MOST POPULAR ECOSYSTEM BUNDLE</span>
+            <h3 class="price-card-title">All-In-One Annual Membership</h3>
+            <div class="price-card-tag">Complete Research + Algo + Portfolio</div>
+            <div class="price-amount">₹25,000</div>
+            <div class="price-cadence">per year + 18% GST (Billed annually)</div>
+
+            <ul class="price-features-list">
+              <li class="price-feature-item">
+                <span style="color: #16A34A;">✔</span>
+                <span><strong>1-Month Algo Strategy Live Cohort Included</strong> (Full access)</span>
+              </li>
+              <li class="price-feature-item">
+                <span style="color: #16A34A;">✔</span>
+                <span><strong>Active Golden Bird Model Portfolio (10–15 stocks)</strong></span>
+              </li>
+              <li class="price-feature-item">
+                <span style="color: #16A34A;">✔</span>
+                <span><strong>Access to all 60 Inbuilt Algo Strategies</strong></span>
+              </li>
+              <li class="price-feature-item">
+                <span style="color: #16A34A;">✔</span>
+                <span>Daily 8:45 AM pre-market intelligence brief via WhatsApp</span>
+              </li>
+              <li class="price-feature-item">
+                <span style="color: #16A34A;">✔</span>
+                <span>Quarterly rebalancing reports with documented rationale</span>
+              </li>
+              <li class="price-feature-item">
+                <span style="color: #16A34A;">✔</span>
+                <span>Priority email & WhatsApp research desk access</span>
+              </li>
+            </ul>
+
+            <button class="btn-cta-large" onclick="openWebinarModal()">
+              Apply for Annual Membership →
+            </button>
+          </div>
+
+          <!-- Tier 3: Cohort Only -->
+          <div class="price-card">
+            <h3 class="price-card-title">Algo Strategy Cohort</h3>
+            <div class="price-card-tag">1-Month Live Intensive Training</div>
+            <div class="price-amount">₹15,000</div>
+            <div class="price-cadence">One-time payment (Live evenings, alternate days)</div>
+
+            <ul class="price-features-list">
+              <li class="price-feature-item">
+                <span style="color: #16A34A;">✔</span>
+                <span>1 Month live classes (100% live, no pre-recordings)</span>
+              </li>
+              <li class="price-feature-item">
+                <span style="color: #16A34A;">✔</span>
+                <span>Statistics, probability, outlier & Markov modeling</span>
+              </li>
+              <li class="price-feature-item">
+                <span style="color: #16A34A;">✔</span>
+                <span>Build & backtest trading logic using AI tools</span>
+              </li>
+              <li class="price-feature-item">
+                <span style="color: #16A34A;">✔</span>
+                <span>Paper trading & live deployment on 100+ brokers</span>
+              </li>
+            </ul>
+
+            <button class="btn-secondary" onclick="openWebinarModal()">
+              Join Next Cohort Batch →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 11. ABOUT AMAM ARUN ==================== -->
+    <section class="section-about" id="about">
+      <div class="container about-grid">
+        <div class="about-photo-wrapper">
+          <img src="assets/amam_arun.jpg" alt="Amam Arun SEBI RA" class="about-img" />
+          <div style="background: #FFFFFF; border-radius: 12px; padding: 14px 20px; box-shadow: var(--shadow-md); position: absolute; bottom: -20px; right: 20px; border: 1.5px solid var(--border-medium);">
+            <div style="font-weight: 800; font-size: 14px; color: var(--orange-700);">Amam Arun, SEBI RA</div>
+            <div style="font-size: 11.5px; color: var(--text-muted);">Bangalore, Karnataka, India</div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag">About The Analyst</span>
+          <h2>Twelve Years of Disciplined Fundamental & Quantitative Equity Research</h2>
+          <p>
+            Amam Arun is a SEBI Registered Research Analyst (INH000028422) operating out of Bangalore. With over a decade of hands-on experience analyzing Indian equities across multiple market cycles, his practice is founded on a single conviction: that careful, independent research communicated honestly is the most reliable edge in public markets.
+          </p>
+          <p>
+            Unlike social media influencers who monetize unregulated "tips" or earn commissions from broker affiliations, Amam's advisory operates with complete regulatory transparency under the SEBI (Research Analysts) Regulations, 2014. Every recommendation comes with an explicit investment thesis, a quantitative valuation framework, and documented risks that would invalidate it.
+          </p>
+          <div style="display: flex; gap: 16px; margin-top: 24px;">
+            <button class="btn-cta" onclick="openWebinarModal()">
+              Meet Amam Live This Friday @ 9 PM →
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 12. FREQUENTLY ASKED QUESTIONS ==================== -->
+    <section class="section-faq" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Got Questions?</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle">
+            Clear, straightforward answers about our live sessions, research services, and compliance framework.
+          </p>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item open">
+            <button class="faq-question">
+              <span>Is Amam Arun officially registered with SEBI?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. Amam Arun is a SEBI Registered Research Analyst under Registration No. <strong>INH000028422</strong>, operating strictly in compliance with the SEBI (Research Analysts) Regulations, 2014. All research reports, disclosures, and investor charters are publicly maintained.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Do I need coding or programming knowledge to build algo strategies?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>No coding experience is required. In our live sessions and cohorts, we teach you how to formulate mathematical and statistical rules (like Markov Chains, breakout criteria, and mean reversion) and use modern AI tools to generate and test the strategy logic effortlessly.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>What happens during the Friday 9:00 PM Live Webinar?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>The Friday 9:00 PM masterclass is a 90-minute live interactive Zoom session. We deconstruct the week's market behavior, demonstrate real quantitative strategies, explain how institutions use Markov Chains, and host an open, unscripted Q&A session.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Can I connect these 60 algo strategies to my own broker?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. All strategies can be backtested and paper-traded first. Once you are confident, they can be deployed via API to over 100+ supported Indian brokers (Zerodha, Angel One, Upstox, Fyers, Alice Blue, etc.).</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>How does the Model Portfolio service work?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>The Golden Bird Model Portfolio consists of 10–15 handpicked Indian companies with target weights, quarterly rebalancing rationale, and earnings reviews. It is ideal for working professionals who want disciplined equity wealth creation without intraday screen monitoring.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Are refunds available if I need to cancel?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. In full accordance with SEBI guidelines, subscriptions cancelled in writing are processed for refunds on a pro-rata basis after deducting applicable taxes and incurred service costs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 13. BOTTOM CONVERSION CTA BANNER ==================== -->
+    <section style="background: linear-gradient(135deg, #FF6B00 0%, #EA580C 50%, #C2410C 100%); color: #FFFFFF; padding: 70px 0; text-align: center; position: relative;">
+      <div class="container" style="max-width: 800px;">
+        <span style="background: rgba(255, 255, 255, 0.2); font-weight: 800; font-size: 12px; padding: 4px 14px; border-radius: 999px; text-transform: uppercase;">
+          Seats Capped at 100 Live Attendees
+        </span>
+        <h2 style="font-family: var(--font-display); font-size: 36px; font-weight: 800; margin: 16px 0 12px; line-height: 1.2;">
+          Take Control of Your Trading with Math & Statistics This Friday
+        </h2>
+        <p style="font-size: 16px; opacity: 0.95; margin-bottom: 28px;">
+          Stop losing capital on unverified Telegram channels. Learn how a SEBI Registered Research Analyst models probability, deploys algorithms, and constructs resilient equity portfolios.
+        </p>
+        <button class="btn-cta-large" onclick="openWebinarModal()" style="background: var(--green-cta-gradient); box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);">
+          Reserve Your Free Friday 9 PM Zoom Seat Now →
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== 14. FOOTER & SEBI REGULATORY DISCLOSURES ==================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <h4>Amam Arun Research</h4>
+          <p>Boutique equity research and algorithmic strategy advisory by Amam Arun, SEBI Registered Research Analyst (INH000028422).</p>
+          <div style="font-size: 12.5px; color: #94A3B8;">
+            📍 Bangalore, Karnataka, India<br>
+            ✉️ amam.arun1@gmail.com | 📞 +91 99627 39159
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h5>Ecosystem</h5>
+          <ul class="footer-links">
+            <li><a href="#framework">3-Stage Architecture</a></li>
+            <li><a href="#strategies">60 Algo Strategies</a></li>
+            <li><a href="#methodology">5-Step Research Process</a></li>
+            <li><a href="#routine">A Member's Routine</a></li>
+            <li><a href="#pricing">Membership Pricing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Live Masterclass</h5>
+          <ul class="footer-links">
+            <li><a href="#webinar">Friday 9 PM Agenda</a></li>
+            <li><a href="#" onclick="openWebinarModal(); return false;">Claim Zoom Pass</a></li>
+            <li><a href="#about">About Amam Arun</a></li>
+            <li><a href="#faq">Frequently Asked Questions</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Compliance & Grievance</h5>
+          <ul class="footer-links">
+            <li><a href="https://scores.sebi.gov.in" target="_blank">SEBI SCORES Portal</a></li>
+            <li><a href="https://smartodr.in" target="_blank">SMART ODR Portal</a></li>
+            <li><a href="#compliance">Investor Charter</a></li>
+            <li><a href="#compliance">Grievance Redressal</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mandatory Regulatory Notice -->
+      <div class="footer-compliance-box" id="compliance">
+        <strong>SEBI Regulatory Disclaimer & Mandatory Disclosures:</strong><br>
+        Investments in the securities market are subject to market risks. Read all related documents carefully before investing. Registration granted by SEBI, membership of BASL, and certification from NISM in no way guarantee the performance of the intermediary or provide any assurance of returns to investors. Past performance is not indicative of future results.<br><br>
+        Research services are provided by Amam Arun, SEBI Registered Research Analyst, Registration No. INH000028422. All recommendations, model portfolios, and research notes are non-personalised and general in nature; they do not constitute personalised investment advisory or portfolio management services. Educational modules and webinar masterclasses teach mathematical principles, statistical frameworks, and systematic logic, provided separately from regulated research recommendations. All payments are processed via Razorpay with valid tax invoices.
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Amam Arun (SEBI RA INH000028422). All rights reserved.</div>
+        <div style="display: flex; gap: 16px;">
+          <span>Bangalore, Karnataka</span>
+          <span>•</span>
+          <span>Terms & Conditions</span>
+          <span>•</span>
+          <span>Privacy Policy</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== 15. MODAL: FRIDAY WEBINAR REGISTRATION ==================== -->
+  <div class="modal-overlay" id="webinarModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" onclick="closeModal('webinarModal')">✕</button>
+      
+      <div id="regModalBody">
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+          <span class="pulse-dot"></span>
+          <span style="font-size: 12px; font-weight: 800; color: var(--orange-700); text-transform: uppercase;">
+            Friday @ 9:00 PM IST (Live on Zoom)
+          </span>
+        </div>
+        <h3 style="font-family: var(--font-display); font-size: 24px; font-weight: 800; color: var(--text-primary); margin-bottom: 6px;">
+          Claim Your Live Masterclass Pass
+        </h3>
+        <p style="font-size: 14px; color: var(--text-secondary); margin-bottom: 20px;">
+          Free entry for Meta registrants. Receive your private Zoom link and 3 free strategy bonuses.
+        </p>
+
+        <form id="webinarRegForm">
+          <div class="form-group">
+            <label class="form-label">Full Name *</label>
+            <input type="text" id="regName" class="form-input" placeholder="e.g. Rahul Sharma" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">WhatsApp Number (for Zoom Link & Bonuses) *</label>
+            <input type="tel" id="regPhone" class="form-input" placeholder="+91 98765 43210" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Email Address *</label>
+            <input type="email" id="regEmail" class="form-input" placeholder="rahul@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Your Current Market Experience</label>
+            <select id="regExp" class="form-select">
+              <option value="Beginner">Beginner (< 1 Year in Markets)</option>
+              <option value="Intermediate">Intermediate (1–3 Years Trading/Investing)</option>
+              <option value="Advanced">Experienced (3+ Years Seeking Algo/Quant Systems)</option>
+              <option value="WorkingProfessional">Working Professional Looking for Model Portfolio</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn-cta-large" style="width: 100%; margin-top: 10px;">
+            Confirm My Friday 9 PM Pass (Free) →
+          </button>
+
+          <p style="font-size: 11.5px; color: var(--text-muted); text-align: center; margin-top: 12px;">
+            🔒 Zero Spam. Direct Zoom details and PDF bonuses will be shared directly on WhatsApp.
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 16. MODAL: STRATEGY DETAIL INSPECTION ==================== -->
+  <div class="modal-overlay" id="strategyDetailModal">
+    <div class="modal-card">
+      <button class="modal-close-btn" onclick="closeModal('strategyDetailModal')">✕</button>
+      <div id="stratModalContent">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="app.js"></script>
+</body>
+</html>
